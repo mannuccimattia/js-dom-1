@@ -11,6 +11,7 @@
 <body style="background-color: gray;">
   <div class="container">
     <h1>js-dom-1</h1>
+    <!-- soluzione con diplay:none -->
     <div class="d-flex">
       <div class="w-50">
         <img id="lamp-off" class="shown" src="./img/white_lamp.png" alt="white_lamp">
@@ -20,6 +21,18 @@
         <button id ="on-off-btn" class="mt-25">Accendi</button>
       </div>
     </div>
+
+    <hr>
+    <!-- soluzione con src -->
+    <div class="d-flex">
+      <div class="w-50">
+        <img src="./img/white_lamp.png" alt="white_lamp" id="lamp">
+      </div>
+      <div class="w-50">
+        <button id="btn" class="mt-25">Accendi</button>
+      </div>
+    </div>
+
   </div>
   <script src="./js/script.js"></script>
 </body>

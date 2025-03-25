@@ -1,3 +1,6 @@
+/* ******************************************** */
+/*            SOLUZIONE DISPLAY:NONE            */
+/* ******************************************** */
 const lampOff = document.getElementById("lamp-off");
 const lampOn = document.getElementById("lamp-on")
 const onOffBtn = document.getElementById("on-off-btn");
@@ -26,3 +29,23 @@ onOffBtn.addEventListener("click", function(){
     onOffBtn.innerHTML = "Accendi"
   }
 });
+
+
+/* ******************************************** */
+/*                 SOLUZIONE SRC                */
+/* ******************************************** */
+const lamp = document.getElementById("lamp");
+const button = document.getElementById("btn");
+
+// al click del bottone cambio il contenuto dell'immagine con la lampadina accesa
+button.addEventListener("click", function(){
+  lamp.classList.toggle("is-on");
+  if(lamp.classList.contains("is-on")){
+    lamp.src = "./img/yellow_lamp.png";
+    btn.innerHTML = "Spegni"
+  }
+  else{
+    lamp.src = "./img/white_lamp.png";
+    btn.innerHTML = "Accendi"
+  }
+})

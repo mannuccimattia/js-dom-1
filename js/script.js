@@ -1,8 +1,12 @@
+/* ******************************************** */
+/*            SOLUZIONE DISPLAY:NONE            */
+/* ******************************************** */
 const lampOff = document.getElementById("lamp-off");
 const lampOn = document.getElementById("lamp-on")
 const onOffBtn = document.getElementById("on-off-btn");
 
-onOffBtn.addEventListener ('click', function(){
+// al click del bottone assegno display:none alla lampadina spenta e display:inline-block alla lampadina accesa
+onOffBtn.addEventListener('click', function(){
   // tolgo l'immagine lamp-off
   lampOff.classList.remove("shown");
   lampOff.classList.add("hidden");
@@ -10,3 +14,15 @@ onOffBtn.addEventListener ('click', function(){
   lampOn.classList.remove("hidden")
   lampOn.classList.add("shown");
 });
+
+
+/* ******************************************** */
+/*                 SOLUZIONE SRC                */
+/* ******************************************** */
+const lamp = document.getElementById("lamp");
+const button = document.getElementById("btn");
+
+// al click del bottone cambio il contenuto dell'immagine con la lampadina accesa
+button.addEventListener("click", function(){
+  lamp.src = "./img/yellow_lamp.png";
+})
