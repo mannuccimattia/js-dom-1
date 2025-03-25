@@ -3,3 +3,30 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.w-50{
+  width: 50%;
+}
+
+.mt-25{
+  margin-top: 25%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.shown{
+  display: inline-block;
+}
+
+
