@@ -1,5 +1,5 @@
 /* ******************************************** */
-/*            SOLUZIONE DISPLAY:NONE            */
+/*            SOLUZIONE 1            */
 /* ******************************************** */
 const lampOff = document.getElementById("lamp-off");
 const lampOn = document.getElementById("lamp-on")
@@ -32,12 +32,12 @@ onOffBtn.addEventListener("click", function(){
 
 
 /* ******************************************** */
-/*                 SOLUZIONE SRC                */
+/*                 SOLUZIONE 2                  */
 /* ******************************************** */
 const lamp = document.getElementById("lamp");
 const button = document.getElementById("btn");
 
-// al click del bottone cambio il contenuto dell'immagine con la lampadina accesa
+// al click del bottone, tramite un toggle, assegno e tolgo ripetutamente la classe "is-on" alla lampadina. Per avere l'effetto acceso/spento uso un ciclo if che controlla quando la lampadina ha classe "is-on" e cambia l'immagine con quella della lampadina accesa
 button.addEventListener("click", function(){
   lamp.classList.toggle("is-on");
   if(lamp.classList.contains("is-on")){

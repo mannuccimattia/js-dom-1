@@ -1,5 +1,5 @@
 /* ******************************************** */
-/*            SOLUZIONE DISPLAY:NONE            */
+/*            SOLUZIONE 1            */
 /* ******************************************** */
 const lampOff = document.getElementById("lamp-off");
 const lampOn = document.getElementById("lamp-on")
@@ -17,7 +17,7 @@ onOffBtn.addEventListener('click', function(){
 
 
 /* ******************************************** */
-/*                 SOLUZIONE SRC                */
+/*                 SOLUZIONE 2                  */
 /* ******************************************** */
 const lamp = document.getElementById("lamp");
 const button = document.getElementById("btn");
