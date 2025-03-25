@@ -14,3 +14,5 @@ Facciamo accendi e spegni:
 E così via...
 
 Per fare questo bonus potremmo aver bisogno di del metodo string.includes()
+
+DONE
